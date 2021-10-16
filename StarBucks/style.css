@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: rgba(0,0,0,.87);
 }
 
 header {
@@ -10,8 +13,33 @@ header {
 .header-container {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: yellow;
     height: 100%;
+}
+
+.left-nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.left-nav nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.left-nav  nav ul li {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-left: 24px;
+    font-weight: 700;
+}
+
+.left-nav  nav ul li:hover {
+    color: #008248;
+    cursor: pointer;
 }
 
 .logo {
@@ -21,4 +49,5 @@ header {
 
 .logo img {
     height: 100%;
+    width: 100%;
 }
